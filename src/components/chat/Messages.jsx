@@ -13,7 +13,7 @@ export const Messages = () => {
   return (
     <>
       <div className="overflow-scroll h-full pb-16 text-gray-400">
-        <Assistant text={"This is the very beginning if the chat 😊"} />
+        <Assistant text={"This is the very beginning of the chat 😊"} />
         {history.map((msg, i) => {
           return msg.role === "user" ? (
             <User key={i} text={msg.parts[0].text} />
