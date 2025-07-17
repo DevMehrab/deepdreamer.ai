@@ -3,7 +3,7 @@ import { useContext, useState } from "react";
 import { TextContext } from "../context/context";
 
 const ai = new GoogleGenAI({
-  apiKey: "AIzaSyBzN15cAZqE7wGXCL2ZlAGGVYssP4zHNWs",
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY,
 });
 
 export function useText() {
