@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Clash Grotesk", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+a.active {
+  color: oklch(45.2% 0.211 324.591);
+  transition: 0.2s all ease;
+}
+.mobile-nav a.active {
+  background-color: #a800b7;
+  color: white;
+}
+.assistant p,
+.output p {
+  margin-bottom: 16px;
+}
+.assistant strong,
+.output strong {
+  font-weight: 600;
+}
+.assistant li,
+.output li {
+  padding: 8px 0;
+}
+.assistant li::before,
+.output li::before {
+  content: "• ";
+  margin-right: 4px;
+}
+
+.assistant hr,
+.output hr {
+  opacity: 50%;
+  margin: 24px 0;
+}
+.assistant h1,
+.output h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  border-left: 4px solid rgba(128, 128, 128, 0.199);
+  padding-left: 16px;
+}
+.assistant h2,
+.output h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  border-left: 4px solid rgba(128, 128, 128, 0.199);
+  padding-left: 16px;
+}
+
+.assistant h3,
+.output h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.assistant h3::before,
+.output h3::before {
+  content: "▎";
+  opacity: 60%;
+}
+.assistant h4,
+.output h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+code {
+  font-family: monospace;
+  background-color: rgba(128, 128, 128, 0.158);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: rgba(51, 51, 51, 0.158);
+  padding: 12px;
+  text-wrap: wrap;
+}
+pre code {
+  font-family: monospace;
+  background-color: rgba(128, 128, 128, 0);
+  padding: 0px 0px;
+}
