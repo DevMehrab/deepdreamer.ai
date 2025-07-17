@@ -10,10 +10,10 @@ import { Archive } from "./pages/Archive";
 function App() {
   return (
     <>
-      <div className="fixed bg-sky-400 h-96 w-96 rounded-full blur-[500px] backdrop-blur-3xl scale-200 -z-50 opacity-10">
+      <div className="fixed bg-sky-400 h-96 w-96 rounded-full blur-[500px] backdrop-blur-3xl scale-200 -z-50 opacity-5 sm:opacity-10">
         {" "}
       </div>
-      <div className="fixed bg-rose-400 h-96 w-96 rounded-full blur-[500px] backdrop-blur-3xl scale-200 -z-50 opacity-10 top-full right-0">
+      <div className="fixed bg-rose-400 h-96 w-96 rounded-full blur-[500px] backdrop-blur-3xl scale-200 -z-50 opacity-5 sm:opacity-10 top-full right-0">
         {" "}
       </div>
       <Header />
