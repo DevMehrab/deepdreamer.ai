@@ -7,9 +7,9 @@ export const Transform = () => {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-16">
-        <Input targetRef={ref}/>
-          <div ref={ref}></div>
-        <Output targetRef={ref}/>
+        <Input targetRef={ref} />
+        <Output targetRef={ref} />
+        <div ref={ref}></div>
       </div>
     </>
   );
