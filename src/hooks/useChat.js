@@ -3,7 +3,7 @@ import { useContext, useState } from "react";
 import { ChatContext } from "../context/context";
 
 const ai = new GoogleGenAI({
-  apiKey: import.meta.env.VITE_GEMINI_API_KEY,
+  apiKey: 'AIzaSyBzN15cAZqE7wGXCL2ZlAGGVYssP4zHNWs',
 });
 
 export function useChat() {

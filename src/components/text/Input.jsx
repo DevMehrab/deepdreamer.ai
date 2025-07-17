@@ -3,7 +3,7 @@ import { TextContext } from "../../context/context";
 import { useText } from "../../hooks/useText";
 import { UseCase } from "./UseCase";
 
-export const Input = () => {
+export const Input = ({ targetRef }) => {
   const ref = useRef();
   const { inputTitle, placeholder, btnText, isLoading } =
     useContext(TextContext);
@@ -13,6 +13,7 @@ export const Input = () => {
       callApi(ref.current.value);
     }
     e.target.disabled = true;
+    targetRef.current?.scrollIntoView({ behavior: "smooth" });
     setTimeout(() => {
       e.target.disabled = false;
     }, 4000);

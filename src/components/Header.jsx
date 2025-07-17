@@ -32,7 +32,7 @@ export const Header = () => {
             <div className="grid w-full grid-cols-4 md:hidden mt-4 mobile-nav">
               <NavLink
                 className={
-                  "text-gray-200 mr-5 flex justify-center items-center py-4 rounded"
+                  "text-gray-200 mr-5 flex justify-center items-center py-4 rounded bg-slate-900"
                 }
                 to="/image"
               >
@@ -40,7 +40,7 @@ export const Header = () => {
               </NavLink>
               <NavLink
                 className={
-                  "text-gray-200 mr-5 flex justify-center items-center py-4 rounded"
+                  "text-gray-200 mr-5 flex justify-center items-center py-4 rounded bg-slate-900"
                 }
                 to="/text"
               >
@@ -48,7 +48,7 @@ export const Header = () => {
               </NavLink>
               <NavLink
                 className={
-                  "text-gray-200 mr-5 flex justify-center items-center py-4 rounded"
+                  "text-gray-200 mr-5 flex justify-center items-center py-4 rounded bg-slate-900"
                 }
                 to="/chat"
               >
@@ -56,7 +56,7 @@ export const Header = () => {
               </NavLink>
               <NavLink
                 className={
-                  "text-gray-200 mr-5 flex justify-center items-center py-4 rounded"
+                  "text-gray-200 mr-5 flex justify-center items-center py-4 rounded bg-slate-900"
                 }
                 to="/archive"
               >

@@ -13,7 +13,7 @@ export const Image = () => {
   const { current } = useContext(ImageContext);
   useEffect(() => {
     let interval = setTimeout(() => {
-      bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+      
     }, 5000);
   }, [current]);
   return (
@@ -21,7 +21,7 @@ export const Image = () => {
       <ImgGenProvider>
         <Container>
           <Title />
-          <Input />
+          <Input targetRef = {bottomRef}/>
           <Settings />
 
           <div ref={bottomRef} />
